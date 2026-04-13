@@ -17,3 +17,7 @@ export function calcularMediana(datos: number[]): number | null {
     return ordenados[mitad];
   }
 }
+
+export function filtrarAtipicos(datos: number[], limite: number): number[] {
+  return datos.filter(n => Math.abs(n) <= limite);
+}
