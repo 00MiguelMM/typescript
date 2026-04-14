@@ -1,4 +1,5 @@
-import { calcularMedia, calcularMediana, filtrarAtipicos } from "./math-utils.ts";
+import { calcularMedia, calcularMediana, filtrarAtipicos } from "./math-utils.js";
+
 const datos = [1, 2, 3, 4, 100];
 
 console.log("Media:", calcularMedia(datos));

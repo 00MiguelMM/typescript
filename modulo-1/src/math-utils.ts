@@ -12,9 +12,9 @@ export function calcularMediana(datos: number[]): number | null {
   const mitad = Math.floor(ordenados.length / 2);
 
   if (ordenados.length % 2 === 0) {
-    return (ordenados[mitad - 1] + ordenados[mitad]) / 2;
+    return ((ordenados[mitad - 1] ?? 0) + (ordenados[mitad] ?? 0)) / 2;
   } else {
-    return ordenados[mitad];
+    return ordenados[mitad] ?? null;
   }
 }
 
