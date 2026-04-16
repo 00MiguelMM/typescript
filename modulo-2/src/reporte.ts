@@ -12,3 +12,8 @@ export function generarReporte(estado: EstadoMatricula): string {
       return `Matrícula finalizada con nota media ${estado.notaMedia}`;
   }
 }
+
+default: {
+  const comprobacionExhaustiva: never = estado;
+  throw new Error("Estado no manejado");
+}
